@@ -15,9 +15,10 @@ from src.analyzer import calcular_percentiles
 
 app = FastAPI()
 
-@app.get("/analizar")
-async def analizar(query: str, precio: float, estrellas: float):
+
+#@app.get("/analizar")
+#async def analizar(query: str, precio: float, estrellas: float):
     # Suponiendo que 'resumen_categorias' y 'df_parquet' existen
-    estrategia = obtener_estrategia(query, resumen_categorias)
-    resultado = calcular_percentiles(df_parquet, precio, estrellas, estrategia)
-    return {"ia": estrategia, "analisis": resultado}
+#    estrategia = obtener_estrategia(query, resumen_categorias)
+#    resultado = calcular_percentiles(df_parquet, precio, estrellas, estrategia)
+#    return {"ia": estrategia, "analisis": resultado}
